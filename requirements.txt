@@ -1,0 +1,3 @@
+openai-whisper>=20231117
+streamlit>=1.28.0
+ffmpeg-python>=0.2.0
