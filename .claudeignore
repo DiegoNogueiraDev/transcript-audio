@@ -1,0 +1,169 @@
+
+
+
+# ========================================
+# CLAUDE CODE - OTIMIZAÇÃO MÁXIMA DE TOKENS
+# ========================================
+
+# === DEPENDÊNCIAS (CRÍTICO) ===
+node_modules/
+.pnp/
+.pnp.js
+.yarn/
+
+# === GIT ===
+.git/
+.github/
+.gitattributes
+
+# === BUILDS ===
+.next/
+build/
+dist/
+out/
+.turbo/
+*.tsbuildinfo
+.cache/
+
+# === TESTES ===
+coverage/
+test-results/
+playwright-report/
+.nyc_output/
+**/*.spec.ts
+**/*.spec.ts.snap
+**/*test*.txt
+**/*test*.json
+
+# === LOGS ===
+logs/
+*.log
+*-debug.log*
+
+# === PROJETOS SEPARADOS ===
+institutional-website/
+gsm-backup-system/
+
+# === DOCS (TODOS - usar memória Serena) ===
+docs/
+*.md
+!CLAUDE.md
+!README.md
+
+# === ARQUIVOS GERADOS ===
+*.d.ts.map
+next-env.d.ts
+**/prisma/migrations/*.sql
+**/prisma/generated/
+.prisma/
+
+# === AMBIENTE ===
+.env*
+*.env
+!.env.example
+
+# === UPLOADS/TEMP ===
+**/uploads/
+**/temp/
+**/tmp/
+backups/
+*.backup
+*.bak
+
+# === IDE ===
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# === MCP/FERRAMENTAS ===
+.playwright-mcp/
+.claude/settings.local.json.backup
+.claude/plans/
+
+# === SERENA (apenas raiz - ignorar subprojetos) ===
+gsm-2.0/**/.serena/
+.serena/cache/
+
+# === MÍDIA ===
+*.mp4
+*.avi
+*.mov
+*.pdf
+*.zip
+*.tar
+*.gz
+*.rar
+*.png
+*.jpg
+*.jpeg
+*.ico
+*.woff*
+*.ttf
+*.eot
+
+# === LOCKS ===
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# === BACKUP CÓDIGO ===
+*.original.backup.js
+*.backup.ts
+*.backup.tsx
+
+# === CACHE ===
+.eslintcache
+.stylelintcache
+
+# === COMPONENTES UI (shadcn) ===
+gsm-2.0/frontend/src/components/ui/
+
+# === TIPOS GERADOS ===
+**/types/generated/
+**/*.generated.ts
+
+# === PUBLIC/STATIC ===
+gsm-2.0/frontend/public/
+
+# === CONFIGS ESTÁTICAS ===
+**/tailwind.config.*
+**/postcss.config.*
+**/next.config.*
+**/tsconfig*.json
+**/eslint*
+**/.prettier*
+**/jest.config.*
+**/vitest.config.*
+
+# === DOCKER ===
+docker-compose*.yml
+Dockerfile*
+
+# === PRISMA MIGRATIONS ===
+**/prisma/migrations/
+
+# === TESTES PLAYWRIGHT ===
+gsm-2.0/frontend/tests/
+**/playwright.config.*
+
+# === HOOKS GIT ===
+.husky/
+
+# === CONFIGS JSON EXTRAS ===
+**/components.json
+**/vercel.json
+.editorconfig
+.npmrc
+.nvmrc
+
+# === SCRIPTS ===
+*.sh
+!scripts/clean-context.sh
+
+# === ARQUIVOS DE TEXTO ===
+*.txt
+!package.json

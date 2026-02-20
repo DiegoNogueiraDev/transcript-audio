@@ -1,0 +1,54 @@
+{
+  "mcpServers": {
+    "slack": {
+      "type": "http",
+      "url": "https://slack.mcp.anthropic.com/mcp",
+      "_comment": "Slack integration via MCP. Requer autenticação OAuth."
+    },
+    "context-hub": {
+      "type": "http",
+      "url": "https://context-hub.cortexflow.space/mcp",
+      "headers": {
+        "Authorization": "Bearer mch_305db9360d1df0841c8a0bf2a0010b1eca1f980723827b3fb12280deb6834662"
+      },
+      "_comment": "MCP Context Hub — RAG memory, semantic search, context optimization."
+    },
+    "serena": {
+      "command": "uvx",
+      "args": [
+        "--from",
+        "git+https://github.com/oraios/serena",
+        "serena",
+        "start-mcp-server",
+        "--context",
+        "claude-code",
+        "--project",
+        "/home/diegonogueira/Documentos/crm-monteiro-souza"
+      ]
+    },
+    "playwright": {
+      "command": "npx",
+      "args": [
+        "@playwright/mcp@latest",
+        "--headless"
+      ]
+    },
+    "context7": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@upstash/context7-mcp"
+      ]
+    },
+    "asana": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@roychri/mcp-server-asana"
+      ],
+      "env": {
+        "ASANA_ACCESS_TOKEN": "2/1212711838688831/1213380055778928:a656beda09804e1292fa115989249a0f"
+      }
+    }
+  }
+}
